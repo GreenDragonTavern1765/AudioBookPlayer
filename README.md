@@ -14,3 +14,14 @@ The card_layout.xml file was created. This will hold the card for each book. It 
 an image, most likely a drawable, it will contain the book title as a string, and it will contain the book author, also
 as a string. This will be populated using the BookObject.kt file, a data class that will hold the values for each of the
 books in the project arraylist.
+
+The BookObject will be created when the setDataList() function is called.
+1. Book Title: input as a string
+2. Book Author: input as a string
+3. Book Cover: input as an Integer, for the drawable
+
+## Part 2: Adjust the RecyclerView
+The Card Layout and the Adapter have been created. In the Adapter, there is a class called setDataList() which will populate
+the mutableListOf() that was created globally within the adapter. These are the values that are added by creating BookObjects.
+The next part of this is to add many values, and to create an onClickListener() to make the cards interactive rather than just
+a list of books.
